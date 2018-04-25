@@ -18,7 +18,6 @@ from pandas import DataFrame
 
 
 
-#
 # def range_intervals(_ll):
 #     total_len = len(_ll)
 #     if total_len < 500:
@@ -98,7 +97,6 @@ def featureselection(trainDict,testDict):
     #print(DataFrame(X_train_counts.A, columns=count_vect.get_feature_names()).to_string())
 
 
-
     tfidf_transformer = TfidfTransformer()
     # X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts2)
     # feature_names = tfidf_transformer.get_feature_names()
@@ -162,10 +160,11 @@ def featureselection(trainDict,testDict):
     plt.show()
 
 
-
-trainDict = splitData('cleanumls_train_data.tsv')
-print ("split train...")
-testDict = splitData('cleanumls_test_total.tsv')
-print ("split test...")
-
-featureselection(trainDict,testDict)
+# Uncomment below this line to execute
+# -------------------------------------
+# trainDict = splitData('cleanumls_train_data.tsv')
+# print ("split train...")
+# testDict = splitData('cleanumls_test_total.tsv')
+# print ("split test...")
+#
+# featureselection(trainDict,testDict)

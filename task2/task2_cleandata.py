@@ -1,3 +1,4 @@
+# iterate through all questions and remove stop words and numeric values
 import csv
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
