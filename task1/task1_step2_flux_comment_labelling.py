@@ -8,7 +8,7 @@ labelling on the comment table on flux
 #actual code starts below 
 import re
 
-comment_table = open('/scratch/si699w18_fluxm/jiaqima/MedHelp/new_comment_table.txt','r').readlines()
+comment_table = open('new_comment_table.txt','r').readlines()
 
 regex1=r"(call|calling|ask|see|tell|visit|talk|consult|go|check|find|checked|show|contacting|contact|speaking|speak|follow|seeing|make an appointment|make an appt\.|have an appointment|have an appt\.|schedule|seek|taken|run|refer)+[ ][\w ]{0,40}( dr |doctor| doc |physician| docs | md | m\.d\.|primary care| gp | gp\.|practitioner|psychologist|pediatrician|cardiologist|dentist| obg | obg\.| check up| ob | ob\.|gastroenterologist|endocrinologist|specialist| pcp | pcp\.| llmd | llmd\.)+"
 regex2=r"(have)[ ][\w ]{0,10}(dr |doctor|doc |physician|docs |md |m\.d\.|primary care|gp |gp\.|practitioner|psychologist|pediatrician|cardiologist|dentist|obg |obg\.|check up|ob |ob\.|gastroenterologist)[ ](run |check | write )"
